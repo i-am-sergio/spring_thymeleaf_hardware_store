@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://roundhouse.proxy.rlwy.net:20718/railway
+    username: root
+    password: -3GG32AbhbCc56Hgf4cbAb-35BCcC3b4
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+  mvc:
+    contentnegotiation:
+      favor-parameter: true
+      media-types.pdf: application/pdf
+
+  thymeleaf:
+    mode: DEVELOPMENT
+    cache: false
+
+media-type:
+  pdf:
+    type: application
+    subtype: pdf
+    parameters:
+      charset: UTF-8
